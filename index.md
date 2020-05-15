@@ -1,5 +1,5 @@
 #Lucas Smith
-If you just want my resume, [here is is](https://smith-ld.github.io/resume)
+If you just want my resume, [here is is](https://smith-ld.github.io/Smith_Lucas_Resume.pdf)
 * [Projects](https://smith-ld.github.io/#projects)
 * [Hobbies and Interests](https://smith-ld.github.io/#hobbies-and-interests)
 * [Stories](https://smith-ld.github.io/#stories)
