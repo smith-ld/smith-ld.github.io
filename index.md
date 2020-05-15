@@ -1,1 +1,11 @@
-Lucas Smith
+#Lucas Smith
+
+
+## Resume
+
+## Hobbies
+
+## Projects
+
+## Stories
+___
