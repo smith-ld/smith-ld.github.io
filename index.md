@@ -1,4 +1,3 @@
-#Lucas Smith
 If you just want my resume, [here is is](https://smith-ld.github.io/Smith_Lucas_Resume.pdf)
 * [Projects](https://smith-ld.github.io/#projects)
 * [Hobbies and Interests](https://smith-ld.github.io/#hobbies-and-interests)
@@ -11,14 +10,20 @@ If you just want my resume, [here is is](https://smith-ld.github.io/Smith_Lucas_
 ### Current Projects
 
 1. Personal YouTube Search History Analytics
-  (a). Progress
-  (b). Deliverables
-  (c). Expected Outcome
+
+    (a). Progress
+  
+    (b). Deliverables
+  
+    (c). Expected Outcome
 
 2. The Concurrent Relationship Between Financial Markets and Media Coverage
-  (a). Progress
-  (b). Deliverables
-  (c). Expected Outcome
+  
+    (a). Progress
+  
+    (b). Deliverables
+  
+    (c). Expected Outcome
 
 
 
