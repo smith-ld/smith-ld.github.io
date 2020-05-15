@@ -49,6 +49,21 @@ If you just want my resume, [here is is](https://smith-ld.github.io/Smith_Lucas_
 
 ## Hobbies and Interests
 
+Photography
+Exercise
+COD: MW - 
+Playing with my cat, Henry
+(Beginning) Intrusion Detection
+
+Outside Courses
+1. Machine Learning
+2. Data Analytics
+
+Books
+Doing Data Science
+Algorithms
+Mastering Postgres
+
 ## Stories
 ___
 
