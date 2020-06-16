@@ -21,12 +21,17 @@ If you just want my resume, [here is is](https://smith-ld.github.io/Smith_Lucas_
 2. The Concurrent Relationship Between Financial Markets and Media Coverage
   
     (a). Progress
+        
         [6/6/20] Currently I am finishing (1). The database is designed and implemented using a Raspberry Pi; working on code that will connect to the database and send/receive information to it. 
   
     (b). Deliverables
+    
         (1). Database Design
+        
         (2). Website scraping 
+        
         (3). -- Gap -- 
+        
         (4). Neural Network Training
   
     (c). Expected Outcome
