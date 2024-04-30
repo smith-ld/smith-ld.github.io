@@ -12,6 +12,7 @@
             background-color: #f4f4f4;
         }
         .container {
+        	border-top: 50px;
             max-width: 800px;
             margin: 0 auto;
             background-color: #fff;
@@ -29,34 +30,159 @@
             list-style-type: disc;
             padding-left: 20px;
         }
+        .checklist {
+        	border: 2px solid black;
+        	background-color: light grey
+        }
+        .no-bullets {
+        	list-style-type: none
+        }
+
+        .no-bullets li {
+            margin-bottom: 10px;
+        }
+
     </style>
 </head>
 <body>
+	<div class="header"><a href="smith-ld.github.io/index.html">Home</a></div>	
     <div class="container">
         <h1>The Importance of Development Checklists: Ensuring Precision and Compliance</h1>
+
+        <h2>First we should go over a few key points. </h2>
+        <ol>
+        	<li><a href="#what-they-are">What they are</a></li>
+        	<li>How they're used</li>
+        	<li>How I've used them</li>
+        	<li>Why you'd use them</li>
+        </ol>
         
+        <h2 id="what-they-are">
+        	What they are
+        </h2>
+        <p>Just checklists. They could be long or short. They serve a specific purpose - getting you to make less bugs in your production software. Sometimes if you're just renaming something, a checklist might look like: 
+        	</p>
+        	<div class="checklist">  <h5 style="margin-left: 20px;">Function Refactoring Checklist</h5>
+
+
+	   <ul class="no-bullets">
+            <li><input type="checkbox" id="task1"><label for="task1">The function still returns the same thing</label></li>
+            <li><input type="checkbox" id="task2"><label for="task2">The function passed all test cases</label></li>
+            <li><input type="checkbox" id="task3"><label for="task3">The function is easier to read</label></li>
+            <li><input type="checkbox" id="task4"><label for="task4">If the function is an action, it the verb_adjective_noun structure (create_excel, start_sub_process)</label></li>
+            <li><input type="checkbox" id="task5"><label for="task5">The function name is specific to its purpose, and not generalizable (start_modeling_process, not start_sub_process)</label></li>
+        </ul>
+
+        	</div>
+ 	
+
+        <p>Seasoned developer? Maybe it'll look like this</p>
+        <div class="checklist"> 
+ 		 <h5 style="margin-left: 20px;">Function Refactoring Checklist</h5>
+
+        	   <ul class="no-bullets">
+
+        		<li><input type="checkbox" id="task5"><label for="task5">Adheres to noun-adjective-verb usage</label></li>
+	<li><input type="checkbox" id="task5"><label for="task5">Minimized number of database API calls</label></li>
+		<li><input type="checkbox" id="task5"><label for="task5">API Load packages have minimal information necessary only for occurrence</label></li>
+	<li><input type="checkbox" id="task5"><label for="task5">If utilizing looping calls, considered ability to load all data at once</label></li>
+	<li><input type="checkbox" id="task5"><label for="task5">If conducting client side validation, validation still works correctly</label></li>
+	<li><input type="checkbox" id="task5"><label for="task5">Regression tests utilized for downstream impact</label></li>
+	<li><input type="checkbox" id="task5"><label for="task5">Appropriate external team stakeholders were consulted and approve of new design, if appropriate</label></li>
+	<li><input type="checkbox" id="task5"><label for="task5">Formal design process was approved by relevant stakeholders</label></li>
+	<li><input type="checkbox" id="task5"><label for="task5">Performance testing was conducted on BVT's, zero, low, nominal, and obscenely large data sets.</label></li>
+<li><input type="checkbox" id="task5"><label for="task5">Refactoring has either no change or improved the ability for unit testing</label></li>
+        </ul>
+</div>
+
+<p> The detail of your checklist depends on what you or your organization want. Could be things that are language, specific coding, or styling specific, something that your team uses, or things that you realize that you're missing when you write code. It could be the extent that you do unit or smoke tests or standards like how you store environment variables.</p>
+
         <h2>Key Reasons Why Development Checklists Are Important:</h2>
         <ul>
             <li><strong>Ensuring Regulatory Compliance:</strong> In fields such as electronic health records (EHRs), developers must adhere to stringent regulatory requirements, including HIPAA in the United States and GDPR in the European Union. Development checklists help ensure that software solutions comply with these regulations by systematically verifying data privacy measures, security protocols, and audit trails.</li>
-            <li><strong>Mitigating Risks:</strong> Checklists serve as risk mitigation tools, identifying potential hazards and vulnerabilities early in the development process. By systematically addressing each item on the checklist, developers can minimize the likelihood of errors, mitigate risks associated with software failures, and enhance the overall safety and reliability of the system.</li>
-            <li><strong>Enhancing Quality Assurance:</strong> Quality assurance is a cornerstone of software development, particularly in industries where errors can have severe consequences. Development checklists facilitate comprehensive testing and validation processes, ensuring that all functional requirements are met, and that the software behaves as intended under various scenarios.</li>
+            <li><strong>Mitigating Risks:</strong> The key is that a checklist prevent some thing from happening again. Checklists serve as risk mitigation tools, identifying potential hazards and vulnerabilities early in the development process. By systematically addressing each item on the checklist, developers can minimize the likelihood of errors, mitigate risks associated with software failures, and enhance the overall safety and reliability of the system. As a developer, it's important to mitigate the risk of your code doing damage to the business.</li>
+            <li><strong>Enhancing Quality Assurance:</strong> Quality assurance is a cornerstone of software development, particularly in industries where errors can have severe consequences. Development checklists facilitate comprehensive testing and validation processes, ensuring that all functional requirements are met, and that the software behaves as intended under various scenarios. as a developer, it's beneficial for you to use a checklist because not only an addition to the business impact that a bug could have but also by preventing you from coming back to the same code that you wrote six months ago and reducing the amount of time for you fixing bugs to channeling that time into creating new features that deliver value. </li>
         </ul>
 
         <h2>Examples of Development Checklists in Action:</h2>
-        <p><strong>EHR Development:</strong> In the healthcare sector, development checklists play a crucial role in the creation of electronic health record systems. These checklists may include items such as:</p>
+
+        <p><strong>Epic:</strong> The biggest electronic healthcare record company  manages the development lifecycle through an in-house built software application. The development application, called EMC2, provides checklists for each user and for each branch that a developer is working on. If a developer checks out a file, there are triggers and rules that will create a development checkpoint for the developer to review and verify before they can push their code to production. Why is this so necessary?. Here are some points to consider:</p>
         <ul>
             <li>Verification of encryption protocols to protect patient data.</li>
             <li>Validation of access controls to ensure that only authorized personnel can view sensitive information.</li>
             <li>Testing interoperability with other healthcare systems to facilitate seamless data exchange.</li>
         </ul>
 
-        <p><strong>Aerospace Engineering:</strong> NASA's development checklists are legendary for their thoroughness and attention to detail, especially in spacecraft and mission planning. For example:</p>
+        <p><strong>NASA:</strong> NASA's development checklists are legendary for their thoroughness and attention to detail, especially in spacecraft and mission planning. If you read up on NASA's formal checklists, it's 70 pages. There's a trade-off to that level of thoroughness, though, discussed below. Here's some things NASA could include:</p>
         <ul>
             <li>Pre-launch checklists verify the functionality of critical systems, such as propulsion, navigation, and communication.</li>
             <li>Mission-specific checklists outline procedures for contingencies such as in-flight anomalies or emergency scenarios.</li>
         </ul>
 
+        <p>A portion of their checklist taken from NASA's STD-8739.8B:</p>
+        <div class="checklist"> 
+        	   <ul class="no-bullets">
+
+        	<input type="checkbox" id="task5"><label for="task5">Asynchronous communications
+        	<li><input type="checkbox" id="task5"><label for="task5">Single or double event upset/bit flip or hardware induced error
+        	<li><input type="checkbox" id="task5"><label for="task5">Interface error
+        	<li><input type="checkbox" id="task5"><label for="task5">Ground or onboard database error
+        	<li><input type="checkbox" id="task5"><label for="task5">Failure of software interface to memory
+        	<li><input type="checkbox" id="task5"><label for="task5">Latent data
+        	<li><input type="checkbox" id="task5"><label for="task5">Communication overload
+        	<li><input type="checkbox" id="task5"><label for="task5">Inconsistent syntax
+        	<li><input type="checkbox" id="task5"><label for="task5">Similarly named commands
+        	<li><input type="checkbox" id="task5"><label for="task5">Inconsistent error, handling rules
+        	<li><input type="checkbox" id="task5"><label for="task5">Missing function
+        	<li><input type="checkbox" id="task5"><label for="task5">Wrong function
+        	<li><input type="checkbox" id="task5"><label for="task5">Excessive functionality
+        	<li><input type="checkbox" id="task5"><label for="task5">Shared resource errors
+        	<li><input type="checkbox" id="task5"><label for="task5">Timing errors
+        	<li><input type="checkbox" id="task5"><label for="task5">Race conditions
+        	<li><input type="checkbox" id="task5"><label for="task5">Deadlock conditions
+        	<li><input type="checkbox" id="task5"><label for="task5">Live conditions
+        	<li><input type="checkbox" id="task5"><label for="task5">Endless loops
+        	<li><input type="checkbox" id="task5"><label for="task5">Buffer overflows
+        	<li><input type="checkbox" id="task5"><label for="task5">Incorrect implementation of a software change, software defect, or software nonconformance</li>
+
+
+        </ul>
+</div>
+        <h2> The tradeoffs & why have them to begin with </h2>
+        <p>There are tradeoffs to using checklists. Note that there is a spectrum of how you use them. Organizations that are agile based might not use checklist as heavily because they might find them tedious or cumbersome. Organizations like NASA or highly regulated and compliant industry. Based organizations could heavily use them because it fits towards their project management, lifecycle: more of a waterfall style.</p>
+
+        <p> personally, I think the checklist should be catered towards the individual developer. Sure, I think organizations that are highly compliant should have checklists, and I think that checklist for an organization are also beneficial. Here are some ways to think about it.</p>
+
+        <ul>
+        	<li> <strong>organizational development checklists </strong>	utilize the lessons learned from the entire organization by noticing trends in development bugs, they've implemented a counter action to reduce the risk and make developers life easier by not having to come back and fix their bug later.</li>
+        	<li> <strong>individual developer specific checklists </strong> cater towards that individual developer. Doing so is also a very agile approach while incorporating this waterfall style method because it taters towards the individual developer noticing what they're doing wrong and fixing it if you take me for example there are things that I've noticed in my development that I always get wrong, and it's easier to create a checklist. I noticed that I always get it wrong to prevent me from coming back and fixing my mistake or appear correcting it for me.</li>
+        </ul>
+
         <p><strong>Conclusion:</strong> Development checklists serve as invaluable tools in software development, providing a structured framework for ensuring precision, compliance, and reliability. Whether in the healthcare industry, aerospace engineering, or other domains, the systematic approach offered by checklists enhances quality assurance, mitigates risks, and ultimately contributes to the delivery of robust and dependable software solutions.</p>
+
+    <div>
+    	<p>Here's one I've used in my software development.</p>
+    	<div class="no-bullets checklist">
+			<ul class="no-bullets">
+				<li> <input type="checkbox"> Code is resuable and modular</li>
+				<li> <input type="checkbox"> each function serves a specific purpose</li>
+				<li> <input type="checkbox"> parameter naming is appropriate and means what it does</li>
+				<li> <input type="checkbox"> using existing API not creating new ones</li>
+				<li> <input type="checkbox"> caching information to the greatest extent possible</li>
+				<li> <input type="checkbox"> encapsulating parameters (if a perimeter is not not needed on a higher level, don't pass it to the lower level)</li>
+				<li> <input type="checkbox"> edge cases, null values, empty strings, out of bounds values were checked</li>
+				<li> <input type="checkbox"> all assumptions were verified </li>
+				<li> <input type="checkbox"> documentation was provided in the file, comment codes were made with a one to 10 line ratio</li>
+				<li> <input type="checkbox"> if you utilizing a formal design process, resources in reference material were provided as justification for decision-making</li>
+				<li> <input type="checkbox"> downstream impacts were considered mitigated if necessary</li>
+				<li> <input type="checkbox"> cyclomatic complexity was reduced</li>
+				<li> <input type="checkbox"> code is easy to read</li>
+				<li> <input type="checkbox"> number of indentations is limited to 3 per function</li>
+			</ul>
+    	</div>	
+    
     </div>
+        </div>
+
 </body>
 </html>
